@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import Label from "../ui/Label";
 
 interface IFormInput {
   name: string;
@@ -28,9 +29,7 @@ const ContactForm: React.FC = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         {/* Name Field */}
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-semibold mb-1">
-            Name
-          </label>
+          <Label name="name" />
           <Input
             type="text"
             id="name"
@@ -44,9 +43,7 @@ const ContactForm: React.FC = () => {
 
         {/* Email Field */}
         <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-semibold mb-1">
-            Email
-          </label>
+          <Label name="email" />
           <Input
             type="email"
             id="email"
@@ -66,9 +63,7 @@ const ContactForm: React.FC = () => {
 
         {/* Message Field */}
         <div className="mb-4">
-          <label htmlFor="message" className="block text-sm font-semibold mb-1">
-            Message
-          </label>
+          <Label name="message" />
           <Textarea
             id="message"
             placeholder="Your message"

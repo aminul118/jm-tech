@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="  sticky top-0 z-50 h-14 flex items-center bg-white shadow-md">
+    <div className="sticky top-0 z-50 h-14 flex items-center bg-white shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <div>
           <Image
@@ -20,13 +20,13 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/">Services</Link>
+              <Link href="/#services">Services</Link>
             </li>
             <li>
               <Link href="/">About</Link>
             </li>
             <li>
-              <Link href="/">Contact</Link>
+              <Link href="/#contact">Contact</Link>
             </li>
           </ul>
         </nav>

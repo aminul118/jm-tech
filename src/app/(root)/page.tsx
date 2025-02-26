@@ -1,8 +1,9 @@
-import BusinessSolution from "@/components/Home/BusinessSolution";
 import FAQ from "@/components/Home/FAQ";
 import HeroBanner from "@/components/Home/HeroBanner";
 import OurTeam from "@/components/Home/OurTeam/OurTeam";
-import Contact from "@/components/Shared/contact/Contact";
+import Services from "@/components/Home/Services";
+import WhyChooseUs from "@/components/Home/WhyChooseUs";
+import Contact from "@/components/contact/Contact";
 
 import React from "react";
 
@@ -10,9 +11,10 @@ const HomePage = () => {
   return (
     <>
       <HeroBanner />
-      <BusinessSolution />
+      <Services />
       <OurTeam />
-      <FAQ/>
+      <WhyChooseUs />
+      <FAQ />
       <Contact />
     </>
   );

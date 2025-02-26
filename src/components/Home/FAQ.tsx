@@ -15,9 +15,10 @@ const FAQ = () => {
     <SectionContainer contentSize="container">
       <SectionTitle title="FAQ" />
 
-      {/* FAQ Image */}
-      <div className="flex items-center justify-center">
-        <div className="relative w-[400px] h-[400px] mx-auto border">
+      {/* FAQ Image and Accordion */}
+      <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
+        {/* FAQ Image */}
+        <div className="relative w-full sm:w-[300px] md:w-[400px] h-[300px] sm:h-[250px] md:h-[400px] mx-auto">
           <Image
             src="/images/logo/faq.png"
             fill
@@ -32,7 +33,7 @@ const FAQ = () => {
           collapsible
           className="mt-6 w-full max-w-2xl mx-auto"
         >
-          {faqData.map((faq) => (
+          {faqData[0].map((faq) => (
             <AccordionItem key={faq.id} value={faq.id}>
               <AccordionTrigger>{faq.question}</AccordionTrigger>
               <AccordionContent>{faq.answer}</AccordionContent>
